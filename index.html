@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<title>Page Title</title>
+	<title>Abhishek Saklani</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -13,6 +13,10 @@
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 	<style type="text/css">
+		body {
+			background-image: linear-gradient(to right, #ff5f6d, #ffc371);
+		}
+
 		/* div {
 			border: 1px solid black;
 		} */
@@ -41,6 +45,16 @@
 
 		.ww {
 			width: 20%
+		}
+
+		.bg_hour {
+			background-image: radial-gradient(#D8FEF8 20%, #6FEFFA);
+			font-size: 20px;
+			font-weight: bold;
+		}
+
+		.pic {
+			background-image: linear-gradient(rgba(28, 181, 224, 1), rgba(28, 181, 224, 0));
 		}
 
 		/* .disp_md {
@@ -88,11 +102,16 @@
 	<div class="container-fluid">
 
 		<!-- pic -->
-		<div class="container-fluid bg-success p-4 mt-4">
+		<div class="container-fluid p-1 mt-4 pic text-center">
 			<div class="row">
 				<div class="col">
 					<img style="border: 5px solid #6690ff;" alt="disp_pic" src="https://via.placeholder.com/150"
 						class="rounded-circle mx-auto d-block" />
+				</div>
+			</div>
+			<div class="row pt-2 ">
+				<div class="col" id="name">
+					Abhishek Saklani
 				</div>
 			</div>
 		</div>
@@ -100,43 +119,39 @@
 		<!-- info -->
 		<div class="container text-center">
 
-			<div class="row">
-				<div class="col" id="name">
-					Abhishek Saklani
-				</div>
-			</div>
+
 			<div class="row mb-3">
 				<div class="col" id="fsd">
 					Full Stack Developer
 				</div>
 			</div>
-			<div class="row det mb-3">
-				<div class="col-sm-12 col-md-12 col-lg">
+			<div class="row det mb-3 justify-content-center">
+				<div class="col-sm-12 col-md-12 col-lg-auto p-2">
 					<i class="fa fa-map-marker"></i>
 					Bangalore, India
 
 				</div>
-				<div class="col-sm-12 col-md-12 col-lg">
+				<div class="col-sm-12 col-md-12 col-lg-auto p-2">
 					<i class="fa fa-phone"></i>
 					+91 8218331426
 				</div>
-				<div class="col-sm-12 col-md-12 col-lg">
+				<div class="col-sm-12 col-md-12 col-lg-auto p-2">
 					<i class="fa fa-envelope"></i>
 					saklani1408@gmail.com
 				</div>
 			</div>
 
 			<div class="row mb-4">
-				<div class="col-sm-12 col-md">
+				<div class="col-sm-12 col-md p-2">
 					<i class="fa fa-linkedin"></i>
 					LINKEDIN
 
 				</div>
-				<div class="col-sm-12 col-md">
+				<div class="col-sm-12 col-md p-2">
 					<i class="fab fa-hackerrank"></i>
 					HACKERRANK
 				</div>
-				<div class="col-sm-12 col-md">
+				<div class="col-sm-12 col-md p-2">
 					<i class="fa fa-github"></i>
 					GITHUB
 				</div>
@@ -147,7 +162,7 @@
 					quote
 				</div>
 			</div>
-			<div class="row mb-4 pb-5">
+			<div class="row mb-4 py-3 pb-5">
 				<div class="col">
 					<button type="button" class="btn btn-primary">
 						RESUME
@@ -157,37 +172,37 @@
 		</div>
 
 		<!-- tech -->
-		<div class="container text-center bg-light disp_md">
+		<div class="container text-center  disp_md">
 			<div class="row p-2 m-4">
 				<div class="col">
 					<h3>TECHNOLOGIES</h3>
 				</div>
 			</div>
 			<div class="row p-2 m-2">
-				<div class="col-sm-6 col-md">
+				<div class="col-sm-6 col-md p-sm-2">
 					<img src="https://cdn.svgporn.com/logos/html-5.svg" width="100px" height="100px" />
 				</div>
-				<div class="col-sm-6 col-md">
+				<div class="col-sm-6 col-md p-sm-2">
 					<img src="https://cdn.svgporn.com/logos/github-icon.svg" width="100px" height="100px" />
 				</div>
-				<div class="col-sm-6 col-md">
+				<div class="col-sm-6 col-md p-sm-2">
 					<img src="https://cdn.svgporn.com/logos/bootstrap.svg" width="100px" height="100px" />
 				</div>
-				<div class="col-sm-6 col-md">
+				<div class="col-sm-6 col-md p-sm-2">
 					<img src="https://cdn.svgporn.com/logos/javascript.svg" width="100px" height="100px" />
 				</div>
 			</div>
 			<div class="row p-2 m-2 mb-5 pb-5">
-				<div class="col-sm-6 col-md">
+				<div class="col-sm-6 col-md p-sm-2">
 					<img src="https://cdn.svgporn.com/logos/react.svg" width="100px" height="100px" />
 				</div>
-				<div class="col-sm-6 col-md">
+				<div class="col-sm-6 col-md p-sm-2">
 					<img src="https://cdn.svgporn.com/logos/css-3.svg" width="100px" height="100px" />
 				</div>
-				<div class="col-sm-6 col-md">
+				<div class="col-sm-6 col-md p-sm-2">
 					<img src="https://cdn.svgporn.com/logos/python.svg" width="100px" height="100px" />
 				</div>
-				<div class="col-sm-6 col-md">
+				<div class="col-sm-6 col-md p-sm-2">
 					<img src="https://cdn.svgporn.com/logos/redux.svg" width="100px" height="100px" />
 				</div>
 			</div>
@@ -249,15 +264,15 @@
 
 
 		<!-- project -->
-		<div class="container text-center pt-4 my-4 bg-light">
+		<div class="container pt-4 my-4 ">
 			<div class="row py-4">
 				<div class="col text-center">
 					<h3>PROJECTS</h3>
 				</div>
 			</div>
-			<div class="row p-3 m-3">
-				<div class="col-sm-12 col-md-6 col-lg">
-					<div class="card" style="width: 18rem;">
+			<div class="row p-3 m-3 text-center">
+				<div class="col-sm-12 col-md-6 col-lg-4 p-4">
+					<div class="card " style="width: 100%;">
 						<img src="https://via.placeholder.com/150" class="card-img-top" alt="..." />
 						<div class="card-body rounded">
 							<h5 class="card-title">Card title</h5>
@@ -269,8 +284,8 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-12 col-md-6 col-lg">
-					<div class="card" style="width: 18rem;">
+				<div class="col-sm-12 col-md-6 col-lg-4 p-4">
+					<div class="card" style="width: 100%;">
 						<img src="https://via.placeholder.com/150" class="card-img-top" alt="..." />
 						<div class="card-body rounded">
 							<h5 class="card-title">Card title</h5>
@@ -282,8 +297,8 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-12 col-md-6 col-lg">
-					<div class="card" style="width: 18rem;">
+				<div class="col-sm-12 col-md-6 col-lg-4 p-4">
+					<div class="card" style="width: 100%;">
 						<img src="https://via.placeholder.com/150" class="card-img-top" alt="..." />
 						<div class="card-body rounded">
 							<h5 class="card-title">Card title</h5>
@@ -297,8 +312,8 @@
 				</div>
 				<!-- </div>
 			<div class="row p-3 m-3"> -->
-				<div class="col-sm-12 col-md-6 col-lg disp_sm">
-					<div class="card" style="width: 18rem;">
+				<div class="col-sm-12 col-md-6 col-lg-4 disp_sm p-4">
+					<div class="card" style="width: 100%;">
 						<img src="https://via.placeholder.com/150" class="card-img-top" alt="..." />
 						<div class="card-body rounded">
 							<h5 class="card-title">Card title</h5>
@@ -310,8 +325,8 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-12 col-md-6 col-lg disp_sm">
-					<div class="card" style="width: 18rem;">
+				<div class="col-sm-12 col-md-6 col-lg-4 disp_sm p-4">
+					<div class="card" style="width: 100%;">
 						<img src="https://via.placeholder.com/150" class="card-img-top" alt="..." />
 						<div class="card-body rounded">
 							<h5 class="card-title">Card title</h5>
@@ -323,8 +338,8 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-12 col-md-6 col-lg disp_sm">
-					<div class="card" style="width: 18rem;">
+				<div class="col-sm-12 col-md-6 col-lg-4 disp_sm p-4">
+					<div class="card" style="width: 100%;">
 						<img src="https://via.placeholder.com/150" class="card-img-top" alt="..." />
 						<div class="card-body rounded">
 							<h5 class="card-title">Card title</h5>
@@ -341,74 +356,74 @@
 
 		<!-- hours -->
 		<div class="container disp_sm">
-			<div class="row offset-md-1 offset-lg-0">
-				<div class="col ww">
+			<div class="container-fluid row offset-md-0 offset-lg-0 text-center det ">
+				<div class="col ww ">
 					<div class="row">
-						<div class="col m-4 py-5"
+						<div class="col m-4 py-5 bg_hour"
 							style="width:150px; height:150px; border-radius: 50%; border: 10px solid blue;">
 							<div class="text-center">
-								200
+								1000+
 							</div>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col">2</div>
+						<div class="col">hours of Coding</div>
 					</div>
 				</div>
 
 				<div class="col ww">
 					<div class="row">
-						<div class="col m-4 py-5"
+						<div class="col m-4 py-5 bg_hour"
 							style="width:150px; height:150px; border-radius: 50%; border: 10px solid blue;">
 							<div class="text-center">
-								200
+								200+
 							</div>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col">2</div>
+						<div class="col">Hackerrank Problems</div>
 					</div>
 				</div>
 
 				<div class="col ww">
 					<div class="row">
-						<div class="col m-4 py-5"
+						<div class="col m-4 py-5 bg_hour"
 							style="width:150px; height:150px; border-radius: 50%; border: 10px solid blue;">
 							<div class="text-center">
-								200
+								250+
 							</div>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col">2</div>
+						<div class="col">Git Commits</div>
 					</div>
 				</div>
 
 				<div class="col ww">
 					<div class="row">
-						<div class="col m-4 py-5"
+						<div class="col m-4 py-5 bg_hour"
 							style="width:150px; height:150px; border-radius: 50%; border: 10px solid blue;">
 							<div class="text-center">
-								200
+								12+
 							</div>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col">2</div>
+						<div class="col">Coding Projects</div>
 					</div>
 				</div>
 
 				<div class="col ww">
 					<div class="row">
-						<div class="col m-4 py-5"
+						<div class="col m-4 py-5 bg_hour"
 							style="width:150px; height:150px; border-radius: 50%; border: 10px solid blue;">
 							<div class="text-center">
-								200
+								100+
 							</div>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col">2</div>
+						<div class="col">Hours of<br /> Life-Skills</div>
 					</div>
 				</div>
 
