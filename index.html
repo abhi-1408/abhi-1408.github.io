@@ -9,31 +9,112 @@
 	<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" />
-
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@300&display=swap">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/circle.css">
 	<style type="text/css">
-		body {
-			background-image: linear-gradient(to right, #ff5f6d, #ffc371);
-		}
-
 		/* div {
 			border: 1px solid black;
 		} */
 
-		#info {
-			/* font-family: 'Roboto Slab', serif; */
-			font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI',
-				Roboto, 'Helvetica Neue', Arial, sans-serif;
+		#pic_border {
+			border: 5px solid #88B9D7;
+
 		}
 
 		#name {
-			font-size: 44px;
+			color: #3C5E9B;
+			font-size: 33px;
+			font-weight: 700;
+			font-family: Open Sans;
+
 		}
 
-		#fsd {
-			font-size: 26px;
+		#prof {
+			color: #707070;
+			font-size: 19px;
+			font-weight: 600;
+			font-family: Open Sans;
 		}
+
+		.info_text_locn {
+			color: #A8A8A8;
+			font-size: 18px;
+			font-weight: 400;
+			font-family: Open Sans;
+		}
+
+		.info_icon_color {
+			color: #FFC831
+		}
+
+		.info_text {
+			color: #707070;
+			font-size: 14px;
+			font-weight: 300;
+			font-family: Roboto;
+		}
+
+		#bg_info {
+			background-image: linear-gradient(to bottom, #06BEB6, #48B1BF);
+		}
+
+		#proj_bg {
+			/* background-image: linear-gradient(#98F5FD, #CBFDFE, #98F5FD); */
+		}
+
+		.proj_name {
+			color: #3C5E9B;
+			font-size: 17px;
+			font-weight: 700;
+			font-family: Open Sans;
+		}
+
+		.proj_subtitle {
+			color: #5D86B4;
+			font-size: 18px;
+			font-weight: 600;
+			font-family: Open Sans;
+		}
+
+		.proj_text {
+			color: #9B9B9B;
+			font-size: 12px;
+			font-weight: 300;
+			font-family: Roboto;
+		}
+
+		#time_bg {
+			color: #C8F2EE;
+		}
+
+		.time_ring {
+			color: #06BEB6;
+		}
+
+		#time_number {
+			color: #5D86B4;
+			font-size: 42px;
+			font-weight: 700;
+			font-family: Open Sans;
+		}
+
+		.time_title {
+			color: #5D86B4;
+			font-size: 32px;
+			font-weight: 700;
+			font-family: Open Sans;
+		}
+
+		.time_text {
+			color: #5D86B4;
+			font-size: 24px;
+			font-weight: 400;
+			font-family: Open Sans;
+		}
+
+
 
 		.det {
 			font-weight: bold;
@@ -57,6 +138,26 @@
 			background-image: linear-gradient(rgba(28, 181, 224, 1), rgba(28, 181, 224, 0));
 		}
 
+		/* .main {
+			border: 5px solid red;
+		} */
+
+		.circle {
+			position: absolute;
+			width: 1em;
+			height: 1em;
+			clip: rect(0em, 1em, 1em, 0.5em);
+			-webkit-transform: rotate(90deg);
+			-moz-transform: rotate(90deg);
+			-ms-transform: rotate(90deg);
+			-o-transform: rotate(90deg);
+			transform: rotate(90deg);
+		}
+
+		.test {
+			background-image: linear-gradient(to bottom, white, rgb(248, 249, 250));
+		}
+
 		/* .disp_md {
 			display: block;
 		}
@@ -66,9 +167,9 @@
 		} */
 
 		@media screen and (max-width: 768px) {
-			body {
+			/* body {
 				background-color: red;
-			}
+			} */
 
 			.disp_md {
 				display: block;
@@ -81,9 +182,9 @@
 		}
 
 		@media screen and (max-width: 600px) {
-			body {
+			/* body {
 				background-color: olive;
-			}
+			} */
 
 			.disp_md {
 				display: none
@@ -99,13 +200,13 @@
 
 <body>
 
-	<div class="container-fluid">
+	<div class="main">
 
 		<!-- pic -->
-		<div class="container-fluid p-1 mt-4 pic text-center">
+		<div class="p-1 pt-4 pic text-center">
 			<div class="row">
 				<div class="col">
-					<img style="border: 5px solid #6690ff;" alt="disp_pic" src="https://via.placeholder.com/150"
+					<img id="pic_border" alt="disp_pic" src="https://via.placeholder.com/150"
 						class="rounded-circle mx-auto d-block" />
 				</div>
 			</div>
@@ -117,53 +218,53 @@
 		</div>
 
 		<!-- info -->
-		<div class="container text-center">
+		<div class="text-center bg-light test">
 
 
 			<div class="row mb-3">
-				<div class="col" id="fsd">
+				<div class="col" id="prof">
 					Full Stack Developer
 				</div>
 			</div>
 			<div class="row det mb-3 justify-content-center">
-				<div class="col-sm-12 col-md-12 col-lg-auto p-2">
-					<i class="fa fa-map-marker"></i>
+				<div class="col-sm-12 col-md-12 col-lg-auto p-2 info_text_locn">
+					<i class="fa fa-map-marker info_icon_color"></i>
 					Bangalore, India
 
 				</div>
-				<div class="col-sm-12 col-md-12 col-lg-auto p-2">
-					<i class="fa fa-phone"></i>
+				<div class="col-sm-12 col-md-12 col-lg-auto p-2 info_text_locn">
+					<i class="fa fa-phone info_icon_color"></i>
 					+91 8218331426
 				</div>
-				<div class="col-sm-12 col-md-12 col-lg-auto p-2">
-					<i class="fa fa-envelope"></i>
+				<div class="col-sm-12 col-md-12 col-lg-auto p-2 info_text_locn">
+					<i class="fa fa-envelope info_icon_color"></i>
 					saklani1408@gmail.com
 				</div>
 			</div>
 
 			<div class="row mb-4">
 				<div class="col-sm-12 col-md p-2">
-					<i class="fa fa-linkedin"></i>
+					<i class="fa fa-linkedin info_icon_color"></i>
 					LINKEDIN
 
 				</div>
 				<div class="col-sm-12 col-md p-2">
-					<i class="fab fa-hackerrank"></i>
+					<i class="fab fa-hackerrank info_icon_color"></i>
 					HACKERRANK
 				</div>
 				<div class="col-sm-12 col-md p-2">
-					<i class="fa fa-github"></i>
+					<i class="fa fa-github info_icon_color"></i>
 					GITHUB
 				</div>
 			</div>
 
-			<div class="row m-2 p-2 disp_sm">
+			<div class="row m-2 p-2 disp_sm info_text">
 				<div class="col ">
 					quote
 				</div>
 			</div>
-			<div class="row mb-4 py-3 pb-5">
-				<div class="col">
+			<div class="row">
+				<div class="col p-1">
 					<button type="button" class="btn btn-primary">
 						RESUME
 					</button>
@@ -172,7 +273,7 @@
 		</div>
 
 		<!-- tech -->
-		<div class="container text-center  disp_md">
+		<div class="text-center py-1 disp_md bg-light">
 			<div class="row p-2 m-4">
 				<div class="col">
 					<h3>TECHNOLOGIES</h3>
@@ -208,13 +309,13 @@
 			</div>
 		</div>
 		<!-- profy -->
-		<div class="container text-center mb-4 py-5 disp_sm">
+		<div class="container-xl text-center mb-5 py-5 disp_sm">
 			<div class="row m-2 py-2">
 				<div class="col">
 					<h3>PROFICIENCIES</h3>
 				</div>
 			</div>
-			<div class="row m-2 p-2">
+			<div class="row m-2 p-2 px-5 m-3">
 				<div class="col p-3">
 					<div class="row">
 						<div class="col">
@@ -264,7 +365,7 @@
 
 
 		<!-- project -->
-		<div class="container pt-4 my-4 ">
+		<div class="p-5 my-4 bg-light" id="proj_bg">
 			<div class="row py-4">
 				<div class="col text-center">
 					<h3>PROJECTS</h3>
@@ -272,11 +373,11 @@
 			</div>
 			<div class="row p-3 m-3 text-center">
 				<div class="col-sm-12 col-md-6 col-lg-4 p-4">
-					<div class="card " style="width: 100%;">
+					<div class="card shadow-lg" style="width: 100%;">
 						<img src="https://via.placeholder.com/150" class="card-img-top" alt="..." />
 						<div class="card-body rounded">
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">
+							<h5 class="card-title proj_name">Card title</h5>
+							<p class="card-text proj_text">
 								Some quick example text to build on the card title and make up
 								the bulk of the card's content.
 							</p>
@@ -285,11 +386,11 @@
 					</div>
 				</div>
 				<div class="col-sm-12 col-md-6 col-lg-4 p-4">
-					<div class="card" style="width: 100%;">
+					<div class="card shadow-lg" style="width: 100%;">
 						<img src="https://via.placeholder.com/150" class="card-img-top" alt="..." />
 						<div class="card-body rounded">
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">
+							<h5 class="card-title proj_name">Card title</h5>
+							<p class="card-text proj_text">
 								Some quick example text to build on the card title and make up
 								the bulk of the card's content.
 							</p>
@@ -298,11 +399,11 @@
 					</div>
 				</div>
 				<div class="col-sm-12 col-md-6 col-lg-4 p-4">
-					<div class="card" style="width: 100%;">
+					<div class="card shadow-lg" style="width: 100%;">
 						<img src="https://via.placeholder.com/150" class="card-img-top" alt="..." />
 						<div class="card-body rounded">
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">
+							<h5 class="card-title proj_name">Card title</h5>
+							<p class="card-text proj_text">
 								Some quick example text to build on the card title and make up
 								the bulk of the card's content.
 							</p>
@@ -313,11 +414,11 @@
 				<!-- </div>
 			<div class="row p-3 m-3"> -->
 				<div class="col-sm-12 col-md-6 col-lg-4 disp_sm p-4">
-					<div class="card" style="width: 100%;">
+					<div class="card shadow-lg" style="width: 100%;">
 						<img src="https://via.placeholder.com/150" class="card-img-top" alt="..." />
 						<div class="card-body rounded">
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">
+							<h5 class="card-title proj_name">Card title</h5>
+							<p class="card-text proj_text">
 								Some quick example text to build on the card title and make up
 								the bulk of the card's content.
 							</p>
@@ -326,11 +427,11 @@
 					</div>
 				</div>
 				<div class="col-sm-12 col-md-6 col-lg-4 disp_sm p-4">
-					<div class="card" style="width: 100%;">
+					<div class="card shadow-lg" style="width: 100%;">
 						<img src="https://via.placeholder.com/150" class="card-img-top" alt="..." />
 						<div class="card-body rounded">
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">
+							<h5 class="card-title proj_name">Card title</h5>
+							<p class="card-text proj_text">
 								Some quick example text to build on the card title and make up
 								the bulk of the card's content.
 							</p>
@@ -339,11 +440,11 @@
 					</div>
 				</div>
 				<div class="col-sm-12 col-md-6 col-lg-4 disp_sm p-4">
-					<div class="card" style="width: 100%;">
+					<div class="card shadow-lg" style="width: 100%;">
 						<img src="https://via.placeholder.com/150" class="card-img-top" alt="..." />
 						<div class="card-body rounded">
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">
+							<h5 class="card-title proj_name">Card title</h5>
+							<p class="card-text proj_text">
 								Some quick example text to build on the card title and make up
 								the bulk of the card's content.
 							</p>
@@ -355,75 +456,106 @@
 		</div>
 
 		<!-- hours -->
-		<div class="container disp_sm">
+		<div class="container-xl py-5 disp_sm">
 			<div class="container-fluid row offset-md-0 offset-lg-0 text-center det ">
 				<div class="col ww ">
 					<div class="row">
-						<div class="col m-4 py-5 bg_hour"
-							style="width:150px; height:150px; border-radius: 50%; border: 10px solid blue;">
-							<div class="text-center">
-								1000+
+						<div class="col m-4 py-3">
+
+							<div class="c100 p68 green">
+								<span>1200+</span>
+								<div class="slice">
+									<div class="bar"></div>
+									<div class="fill"></div>
+								</div>
 							</div>
+
 						</div>
 					</div>
 					<div class="row">
-						<div class="col">hours of Coding</div>
+						<div class="col-12 time_title">hours</div>
+						<div class="col-12 time-text">
+							of Coding</div>
 					</div>
 				</div>
 
 				<div class="col ww">
 					<div class="row">
-						<div class="col m-4 py-5 bg_hour"
-							style="width:150px; height:150px; border-radius: 50%; border: 10px solid blue;">
-							<div class="text-center">
-								200+
+						<div class="col m-4 py-3">
+
+							<div class="c100 p62 green">
+								<span>250+</span>
+								<div class="slice">
+									<div class="bar"></div>
+									<div class="fill"></div>
+								</div>
 							</div>
+
 						</div>
 					</div>
 					<div class="row">
-						<div class="col">Hackerrank Problems</div>
+						<div class="col-12 time_title">Hackerrank</div>
+						<div class="col-12 time-text"> problems</div>
 					</div>
 				</div>
 
 				<div class="col ww">
 					<div class="row">
-						<div class="col m-4 py-5 bg_hour"
-							style="width:150px; height:150px; border-radius: 50%; border: 10px solid blue;">
-							<div class="text-center">
-								250+
+						<div class="col m-4 py-3">
+
+							<div class="c100 p60 green">
+								<span>200+</span>
+								<div class="slice">
+									<div class="bar"></div>
+									<div class="fill"></div>
+								</div>
 							</div>
+
 						</div>
 					</div>
 					<div class="row">
-						<div class="col">Git Commits</div>
+						<div class="col-12 time_title">Git</div>
+						<div class="col-12 time-text"> Commits</div>
 					</div>
 				</div>
 
 				<div class="col ww">
 					<div class="row">
-						<div class="col m-4 py-5 bg_hour"
-							style="width:150px; height:150px; border-radius: 50%; border: 10px solid blue;">
-							<div class="text-center">
-								12+
+						<div class="col m-4 py-3">
+
+							<div class="c100 p55 green">
+								<span>12+</span>
+								<div class="slice">
+									<div class="bar"></div>
+									<div class="fill"></div>
+								</div>
 							</div>
+
 						</div>
 					</div>
 					<div class="row">
-						<div class="col">Coding Projects</div>
+						<div class="col-12 time_title">Coding</div>
+						<div class="col-12 time-text"> Projects</div>
 					</div>
 				</div>
 
 				<div class="col ww">
 					<div class="row">
-						<div class="col m-4 py-5 bg_hour"
-							style="width:150px; height:150px; border-radius: 50%; border: 10px solid blue;">
-							<div class="text-center">
-								100+
+						<div class="col m-4 py-3">
+
+							<div class="c100 p70 green">
+								<span>100+</span>
+								<div class="slice">
+									<div class="bar"></div>
+									<div class="fill"></div>
+								</div>
 							</div>
+
 						</div>
 					</div>
 					<div class="row">
-						<div class="col">Hours of<br /> Life-Skills</div>
+						<div class="col-12 time_title">Hours</div>
+						<div class="col-12 time-text"> of Life Skills</div>
 					</div>
 				</div>
 
@@ -432,6 +564,15 @@
 			</div>
 
 
+		</div>
+
+
+		<div>
+			SEE GITHUB
+			<div class="calendar">
+				<!-- Loading stuff -->
+				Loading the data just for you.
+			</div>
 		</div>
 
 
@@ -446,6 +587,7 @@
 		</div>
 	</div>
 
+
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
 		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
 		crossorigin="anonymous"></script>
@@ -455,6 +597,9 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
 		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
 		crossorigin="anonymous"></script>
+
+
+
 </body>
 
 </html>
