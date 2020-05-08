@@ -20,7 +20,10 @@
 
 		#pic_border {
 			border: 5px solid #88B9D7;
-
+			width: 200px;
+			height: 200px;
+			object-fit: contain;
+			background-color: white;
 		}
 
 		#name {
@@ -159,6 +162,19 @@
 			background-image: linear-gradient(to bottom, white, rgb(248, 249, 250));
 		}
 
+		.links {
+			text-decoration: none;
+		}
+
+		.resume_link {
+			text-decoration: none;
+			color: white;
+		}
+
+		.prof_img {
+			object-fit: contain;
+		}
+
 		/* .disp_md {
 			display: block;
 		}
@@ -207,8 +223,7 @@
 		<div class="p-1 pt-4 pic text-center">
 			<div class="row">
 				<div class="col">
-					<img id="pic_border" alt="disp_pic" src="https://via.placeholder.com/150"
-						class="rounded-circle mx-auto d-block" />
+					<img id="pic_border" alt="disp_pic" src="css/abhi.jpg" class="rounded-circle mx-auto d-block" />
 				</div>
 			</div>
 			<div class="row pt-2 ">
@@ -235,27 +250,29 @@
 				</div>
 				<div class="col-sm-12 col-md-12 col-lg-auto p-2 info_text_locn">
 					<i class="fa fa-phone info_icon_color"></i>
-					+91 8218331426
+					<a href="tel:+91 8218331426">+91 8218331426</a>
 				</div>
 				<div class="col-sm-12 col-md-12 col-lg-auto p-2 info_text_locn">
 					<i class="fa fa-envelope info_icon_color"></i>
-					saklani1408@gmail.com
+					<a href="mailto:saklani1408@gmail.com">saklani1408@gmail.com</a>
 				</div>
 			</div>
 
-			<div class="row mb-4">
-				<div class="col-sm-12 col-md p-2">
+			<div class="row mb-4 justify-content-center">
+				<div class="col-sm-12 col-md-4 col-lg-auto p-2">
 					<i class="fa fa-linkedin info_icon_color"></i>
-					LINKEDIN
+					<a class="links" href='https://www.linkedin.com/in/saklani1408/'>saklani1408</a>
 
 				</div>
-				<div class="col-sm-12 col-md p-2">
+				<div class="col-sm-12 col-md-4 col-lg-auto p-2">
 					<i class="fab fa-hackerrank info_icon_color"></i>
-					HACKERRANK
+					<img width='20px' height="20px"
+						src='https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/160_Hackerrank_logo_logos-512.png' />
+					<a class="links" href='https://www.hackerrank.com/saklani1408'>saklani1408</a>
 				</div>
-				<div class="col-sm-12 col-md p-2">
+				<div class="col-sm-12 col-md-4 col-lg-auto p-2">
 					<i class="fa fa-github info_icon_color"></i>
-					GITHUB
+					<a class="links" href="https://github.com/abhi-1408">abhi-1408</a>
 				</div>
 			</div>
 
@@ -266,9 +283,11 @@
 			</div>
 			<div class="row">
 				<div class="col p-1">
-					<button type="button" class="btn btn-primary">
-						RESUME
-					</button>
+
+					<a class="resume_link"
+						href=" https://drive.google.com/file/d/1H0zA7Yh8EbF2VGRwhjK-qtlJvUxCDMcC/view"><button
+							type="button" class="btn btn-primary">RESUME</button></a>
+
 				</div>
 			</div>
 		</div>
@@ -320,8 +339,9 @@
 				<div class="col p-3">
 					<div class="row">
 						<div class="col">
-							<img src="https://sudhirportfolio.netlify.app/assets/img/proficiency/front.png"
-								width="230px" height="280px" />
+							<img class="prof_img"
+								src="https://sudhirportfolio.netlify.app/assets/img/proficiency/front.png" width="230px"
+								height="280px" />
 						</div>
 					</div>
 					<div class="row">
@@ -335,7 +355,8 @@
 
 					<div class="row">
 						<div class="col">
-							<img src="https://sudhirportfolio.netlify.app/assets/img/proficiency/data.png" width="230px"
+							<img class="prof_img"
+								src="https://sudhirportfolio.netlify.app/assets/img/proficiency/data.png" width="230px"
 								height="280px" />
 
 						</div>
@@ -350,7 +371,8 @@
 
 					<div class="row">
 						<div class="col">
-							<img src="https://sudhirportfolio.netlify.app/assets/img/proficiency/back.png" width="230px"
+							<img class="prof_img"
+								src="https://sudhirportfolio.netlify.app/assets/img/proficiency/back.png" width="230px"
 								height="280px" />
 						</div>
 					</div>
